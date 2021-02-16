@@ -1,0 +1,32 @@
+// "Sticks" footer to bottom of content wrapper (below)
+.footer {
+	background-color: #c4c4c4;
+	width: 100%;
+	position: absolute;
+	bottom: 1;
+	left: 0;
+
+	&__content {
+		margin-top: 9.375rem;
+		margin-left: 2rem;
+
+		h3 {
+			font-size: $font-lg;
+		}
+
+		p {
+			font-size: $font-med;
+			padding: 0.1rem;
+			margin: 0;
+		}
+	}
+	&__contact {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem 0.1rem;
+		font-size: $font-med;
+		a:last-child {
+			margin-top: 1rem;
+		}
+	}
+}

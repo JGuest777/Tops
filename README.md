@@ -1,7 +1,10 @@
 <!-- TODO: Layout Header/Footer -->
 <!-- TODO: Desktop Nav -->
+  <!-- Header- Same color/transparent: Large logo & Nav converts to minimal version on scroll -->
 <!-- TODO: Mobile Menu -->
+  <!-- Full viewport menu frosted glass effect -->
 <!-- TODO: Landing Page -->
+  <!-- Large hero/carosel, minimal scrolling -->
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
