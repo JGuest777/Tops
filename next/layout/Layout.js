@@ -3,7 +3,7 @@ import Footer from '../components/Footer'
 import { useState, useEffect } from 'react'
 import Overlay from './Overlay'
 
-export default function mainLayout({ children }) {
+export default function Layout({ children }) {
 	const [toggleOverlay, setToggleOverlay] = useState(false)
 
 	// Sets body overflox to hidden when overlay is present
