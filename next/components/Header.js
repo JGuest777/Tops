@@ -7,20 +7,20 @@ import Menu from './Menu'
 export default function Header({ toggleOverlay, setToggleOverlay }) {
 	const links = [
 		{
-			slug: '',
-			name: 'Home'
-		},
-		{
 			slug: 'about',
-			name: 'Our Team'
+			name: 'about'
 		},
 		{
-			slug: 'brands',
-			name: 'Our Brands'
+			slug: 'services',
+			name: 'services'
 		},
 		{
-			slug: 'contact',
-			name: 'Contact Us'
+			slug: 'retail',
+			name: 'retail'
+		},
+		{
+			slug: 'recruitment',
+			name: 'recruitment'
 		}
 	]
 
@@ -43,21 +43,11 @@ export default function Header({ toggleOverlay, setToggleOverlay }) {
 			<div className='header__logo'>
 				<Link href='/'>
 					<a>
-						<img src='http://whitmiresfurniture.com/wp-content/uploads/2019/03/logo_peque%C3%B1o.png' />
+						<img src='/logo.png' />
 					</a>
 				</Link>
 			</div>
 			<nav>
-				{/* Mobile Icons & Burger Menu */}
-				<a
-					onClick={handleToggleMenu}
-					className={`header__burger ${toggleMenu && 'open'} hide-desktop`}
-				>
-					<div />
-					<div />
-					<div />
-				</a>
-
 				{/* Desktop Links */}
 				<div className='header__links hide-mobile'>
 					{links.map((link) => (
@@ -67,6 +57,15 @@ export default function Header({ toggleOverlay, setToggleOverlay }) {
 					))}
 				</div>
 			</nav>
+			{/* Mobile Icons & Burger Menu */}
+			<a
+				onClick={handleToggleMenu}
+				className={`header__burger ${toggleMenu && 'open'} hide-desktop`}
+			>
+				<div />
+				<div />
+				<div />
+			</a>
 			{transitions.map(
 				({ item, key, props }) =>
 					item && (

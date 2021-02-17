@@ -9,7 +9,7 @@ html {
 }
 
 body {
-	background-color: #e5e5e5;
+	background-color: #fff;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	line-height: 1.2rem;
@@ -45,5 +45,18 @@ a:hover {
 // pushes footer to bottom of vp if content doesn't expand past vp
 // subtracts vp-height from height of footer
 .content {
-	min-height: calc(100vh - 21.5rem);
+	min-height: calc(100vh - 10rem);
+}
+
+// Visibility
+.hide-mobile {
+	@include breakpoint-down(medium) {
+		display: none !important;
+	}
+}
+
+.hide-desktop {
+	@include breakpoint-up(large) {
+		display: none !important;
+	}
 }

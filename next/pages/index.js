@@ -8,7 +8,9 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<h1>Ready...</h1>
+			<div style={{ paddingTop: '3rem', textAlign: 'center' }}>
+				<h1>Home</h1>
+			</div>
 		</div>
 	)
 }

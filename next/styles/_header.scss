@@ -1,19 +1,20 @@
 .header {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	background-color: #c4c4c4;
-	height: 7.5rem;
+	background-color: #fff;
 	padding-left: 5rem;
 	padding-right: 5rem;
 
 	&__logo {
 		img {
-			max-width: 150px;
+			width: 350px;
 		}
 	}
 
 	&__links {
+		margin-top: 1.5rem;
 		a {
 			color: #000;
 			font-size: $font-lg;
@@ -26,10 +27,6 @@
 
 			&:hover {
 				cursor: pointer;
-			}
-
-			&:active {
-				transform: scale(0.99);
 			}
 		}
 	}
