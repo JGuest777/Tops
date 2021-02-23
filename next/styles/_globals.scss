@@ -60,3 +60,9 @@ a:hover {
 		display: none !important;
 	}
 }
+
+@media (max-width: 640px) {
+	.hero {
+		background-attachment: scroll !important;
+	}
+}
