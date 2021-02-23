@@ -4,8 +4,12 @@ import { v4 as uuidv4 } from 'uuid'
 import Link from 'next/link'
 import Menu from './Menu'
 
-export default function Header({ toggleOverlay, setToggleOverlay }) {
+export default function nav({ toggleOverlay, setToggleOverlay }) {
 	const links = [
+		{
+			slug: '',
+			name: 'home'
+		},
 		{
 			slug: 'about',
 			name: 'about'
@@ -39,28 +43,20 @@ export default function Header({ toggleOverlay, setToggleOverlay }) {
 	}
 
 	return (
-		<header className='header'>
-			<div className='header__logo'>
-				<Link href='/'>
-					<a>
-						<img src='/logo.png' />
-					</a>
-				</Link>
+		<nav className='nav'>
+			{/* Desktop Links */}
+			<div className='nav__links hide-mobile'>
+				{links.map((link) => (
+					<Link href={`/${link.slug}`} key={uuidv4()}>
+						<a>{link.name}</a>
+					</Link>
+				))}
 			</div>
-			<nav>
-				{/* Desktop Links */}
-				<div className='header__links hide-mobile'>
-					{links.map((link) => (
-						<Link href={`/${link.slug}`} key={uuidv4()}>
-							<a>{link.name}</a>
-						</Link>
-					))}
-				</div>
-			</nav>
-			{/* Mobile Icons & Burger Menu */}
+
+			{/* Burger Menu */}
 			<a
 				onClick={handleToggleMenu}
-				className={`header__burger ${toggleMenu && 'open'} hide-desktop`}
+				className={`nav__burger ${toggleMenu && 'open'} hide-desktop`}
 			>
 				<div />
 				<div />
@@ -69,7 +65,7 @@ export default function Header({ toggleOverlay, setToggleOverlay }) {
 			{transitions.map(
 				({ item, key, props }) =>
 					item && (
-						<animated.div key={key} style={props} className='header__menu'>
+						<animated.div key={key} style={props} className='nav__menu'>
 							<Menu
 								links={links}
 								toggleMenu={toggleMenu}
@@ -79,6 +75,6 @@ export default function Header({ toggleOverlay, setToggleOverlay }) {
 						</animated.div>
 					)
 			)}
-		</header>
+		</nav>
 	)
 }

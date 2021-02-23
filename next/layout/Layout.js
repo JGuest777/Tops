@@ -1,5 +1,5 @@
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Nav from '../components/Nav'
+// import Footer from '../components/Footer'
 import { useState, useEffect } from 'react'
 import Overlay from './Overlay'
 
@@ -19,13 +19,13 @@ export default function Layout({ children }) {
 		<>
 			<Overlay toggleOverlay={toggleOverlay} />
 			<div className='content'>
-				<Header
+				<div>{children}</div>
+				<Nav
 					toggleOverlay={toggleOverlay}
 					setToggleOverlay={setToggleOverlay}
 				/>
-				<div>{children}</div>
 			</div>
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	)
 }

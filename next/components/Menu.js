@@ -33,12 +33,12 @@ export default function Menu({
 	}, [toggleMenu])
 
 	return (
-		<div>
+		<>
 			{links.map((link, i) => (
 				<Link href={`/${link.slug}`} key={uuidv4()}>
 					<a ref={linkRefs.current[i]}>{link.name}</a>
 				</Link>
 			))}
-		</div>
+		</>
 	)
 }
