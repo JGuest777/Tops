@@ -3,4 +3,12 @@
 		no-repeat center center fixed;
 	background-size: cover;
 	height: 100vh;
+
+	&__overlay {
+		background-color: rgba($color: #fff, $alpha: 0.5);
+		backdrop-filter: blur(5px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
