@@ -1,12 +1,12 @@
 import Nav from '../components/Nav'
-// import Footer from '../components/Footer'
+import Footer from '../components/Footer'
 import { useState, useEffect } from 'react'
 import Overlay from './Overlay'
 
 export default function Layout({ children }) {
 	const [toggleOverlay, setToggleOverlay] = useState(false)
 
-	// Sets body overflox to hidden when overlay is present
+	// Sets body overflow to hidden when overlay is present
 	useEffect(() => {
 		if (toggleOverlay) {
 			document.querySelector('body').classList.add('no-scroll')
@@ -25,7 +25,7 @@ export default function Layout({ children }) {
 					setToggleOverlay={setToggleOverlay}
 				/>
 			</div>
-			{/* <Footer /> */}
+			<Footer />
 		</>
 	)
 }
