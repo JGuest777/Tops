@@ -1,8 +1,4 @@
 <!-- TODO: Layout Header/Footer -->
-<!-- TODO: Desktop Nav -->
-  <!-- Header- Same color/transparent: Large logo & Nav converts to minimal version on scroll -->
-<!-- TODO: Mobile Menu -->
-  <!-- Full viewport menu frosted glass effect -->
 <!-- TODO: Landing Page -->
   <!-- Large hero/carosel, minimal scrolling -->
 

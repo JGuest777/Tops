@@ -1,51 +1,55 @@
 .social {
-	background: url('https://wallpapercave.com/wp/wp3560888.jpg') no-repeat center
-		center;
-	background-attachment: fixed;
-	background-size: cover;
-	min-height: 50vh;
-	padding: 2rem;
+  background: url('https://wallpapercave.com/wp/wp3560888.jpg') no-repeat center
+    center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 50vh;
+  padding: 2rem;
 
-	h1 {
-		text-align: center;
-		line-height: 4rem;
-		margin-top: 3rem;
-		font-family: $secondaryFont;
-		font-size: 7.5rem;
-	}
+  h1 {
+    text-align: center;
+    line-height: 4rem;
+    margin-top: 3rem;
+    font-family: $secondaryFont;
+    font-size: 7.5rem;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+  }
 
-	&__link {
-		margin-top: 1rem;
-		margin-bottom: 2rem;
-		font-family: $altFont;
-		font-size: $font-lg;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+  &__link {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-family: $altFont;
+    font-size: $font-lg;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-		a {
-			text-align: center;
-		}
-		p {
-			text-align: center;
-			margin-top: 0.5rem;
-		}
-	}
+    a {
+      text-align: center;
+      transition: all 200ms ease-in-out;
 
-	&__grid {
-		text-align: center;
-		img {
-			width: 17.8rem;
-			height: 17.8rem;
-			padding: 1rem;
-			transition: all 200ms ease-in-out;
+      &:hover {
+        transform: scale(1.009);
+        cursor: pointer;
+      }
+    }
+    p {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+  }
 
-			&:hover {
-				transform: scale(1.009);
-				cursor: pointer;
-				box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
-			}
-		}
-	}
+  img {
+    width: 100%;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.009);
+      cursor: pointer;
+      box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+    }
+  }
 }
