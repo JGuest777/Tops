@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid'
 import Link from 'next/link'
 import Menu from './Menu'
 
-export default function nav({ toggleOverlay, setToggleOverlay }) {
+export default function nav({ toggleOverlay, setToggleOverlay }, props) {
 	const links = [
 		{
 			slug: '',

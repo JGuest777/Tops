@@ -1,7 +1,6 @@
 import useInstagram from '../hooks/useInstagram'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-// test
+
 export default function Social({ apiUrl }) {
 	const gramz = useInstagram({ apiUrl })
 
@@ -15,7 +14,7 @@ export default function Social({ apiUrl }) {
 				>
 					<FontAwesomeIcon
 						className='social__icon'
-						icon={faInstagram}
+						icon={['fab', 'instagram']}
 						size='2x'
 					/>
 					<p>@tops_hair_salon</p>

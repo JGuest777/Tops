@@ -2,8 +2,11 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import { useState, useEffect } from 'react'
 import Overlay from './Overlay'
+import Fab from '@material-ui/core/Fab'
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp'
+import ScrollTop from '../utils/ScrollTop'
 
-export default function Layout({ children }) {
+export default function Layout({ children }, props) {
 	const [toggleOverlay, setToggleOverlay] = useState(false)
 
 	// Sets body overflow to hidden when overlay is present
@@ -26,6 +29,11 @@ export default function Layout({ children }) {
 				/>
 			</div>
 			<Footer />
+			<ScrollTop {...props}>
+				<Fab color='default' size='small' aria-label='scroll back to top'>
+					<KeyboardArrowUpIcon />
+				</Fab>
+			</ScrollTop>
 		</>
 	)
 }

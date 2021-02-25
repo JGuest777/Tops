@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Layout from '../layout/Layout'
 import { motion } from 'framer-motion'
+import '../lib/fontAwesome'
 import '../styles/style.scss'
 
 export default function MyApp({ Component, pageProps, router }) {
