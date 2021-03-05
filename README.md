@@ -1,10 +1,19 @@
-<!-- TODO: Layout Header/Footer -->
-<!-- TODO: Desktop Nav -->
-  <!-- Header- Same color/transparent: Large logo & Nav converts to minimal version on scroll -->
-<!-- TODO: Mobile Menu -->
-  <!-- Full viewport menu frosted glass effect -->
 <!-- TODO: Landing Page -->
   <!-- Large hero/carosel, minimal scrolling -->
+  <!-- Promo Banner (photo/text) via CMS -->
+<!-- TODO: Services Page -->
+  <!-- Two column services menu -->
+  <!-- Gallery of speciality services -->
+  <!-- two col 1/2 vw picture description -->
+<!-- TODO: Retail Page -->
+  <!--Teaser pictures/gallery  -->
+  <!-- Why we use specific retail -->
+<!-- TODO: Recruitment Page (Phase Two) -->
+  <!-- info teaser "Why Tops" -->
+  <!-- 2 channel form submission via Youtube etc. -->
+<!-- TODO: Gallery -->
+  <!-- Grid layout of photos (MUI grid) via CMS -->
+  <!-- Instagram layout (ref to instagram grid styling) -->
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
